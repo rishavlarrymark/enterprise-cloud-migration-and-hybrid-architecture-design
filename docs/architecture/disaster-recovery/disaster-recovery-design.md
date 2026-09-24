@@ -274,9 +274,9 @@ Auto Scaling
 Replacement Instance
 
 The objective is to maintain application availability without requiring regional recovery.
-
-Scenario 2 — Availability Zone Failure
-
+```
+### Scenario 2 — Availability Zone Failure
+```
 AZ-A Failure
      |
      v
@@ -287,8 +287,9 @@ Healthy Resources
 AZ-B Application Tier
 
 The multi-AZ architecture is intended to reduce the impact of an individual Availability Zone failure.
-
-Scenario 3 — Regional Failure
+```
+### Scenario 3 — Regional Failure
+```
 Primary Region Failure
           |
           v
@@ -305,10 +306,8 @@ DNS / Traffic Recovery
           |
           v
 Application Validation
-
-Regional recovery should follow a documented and tested recovery procedure.
-
 ```
+Regional recovery should follow a documented and tested recovery procedure.
 
 ## 13. Recovery Process
 
