@@ -250,7 +250,7 @@ Conceptually:
 During a regional recovery event, DNS-based traffic management can redirect users toward the recovery environment where the required infrastructure and application services are available.
 
 The exact mechanism depends on the selected DNS architecture and recovery strategy.
-```
+``
 
 ## 12. Recovery Scenarios
 
