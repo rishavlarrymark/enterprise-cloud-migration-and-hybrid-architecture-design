@@ -196,7 +196,7 @@ Private Application Subnet
    v
 EC2 / Application Tier
 
-```markdown
+```
 
 ## 8. Private Database Subnets
 
@@ -224,7 +224,7 @@ Private Database Subnet
       v
 RDS PostgreSQL
 
-```markdown
+```
 
 ## 9. Routing Architecture
 
@@ -262,7 +262,7 @@ Private Database Subnet
      |
      +----> Required Internal Services
 
-```markdown
+```
 
 ## 10. Internet Gateway
 
@@ -325,7 +325,7 @@ Security requirements.
 Cost.
 Organizational requirements.
 
-```markdown
+```
 
 ## 13. Transit Gateway
 
@@ -344,7 +344,7 @@ Conceptually:
 
 Transit Gateway should be introduced where centralized connectivity provides a clear architectural benefit.
 
-```markdown
+```
 
 ## 14. Security Groups
 
@@ -370,7 +370,7 @@ Database Security Group
 
 The database Security Group should allow database traffic only from authorized application resources rather than from unrestricted network ranges.
 
-```markdown
+```
 
 ## 15. Network ACLs
 
@@ -450,7 +450,7 @@ AWS VPC
      |
      +----> Required AWS Services
 
-```markdown
+```
 
 ## 19. Network Design Validation
 
