@@ -104,10 +104,7 @@ This reduces dependency on a single Availability Zone.
 
 A failure of an individual application instance should be handled through health checks and Auto Scaling where configured.
 
-
-### 6. Multi-Region Disaster Recovery
-
-```markdown
+```
 ## 6. Multi-Region Disaster Recovery
 
 For regional-level failures, a secondary AWS Region can be used as the recovery environment.
@@ -139,10 +136,7 @@ DNS or traffic recovery mechanisms.
 
 The exact recovery architecture should be selected according to business requirements and workload criticality.
 
-
-### 7. Data Protection
-
-```markdown
+```
 ## 7. Data Protection
 
 Data protection is a central component of the disaster recovery strategy.
@@ -159,6 +153,7 @@ The architecture considers:
 
 The selected mechanism should be aligned with the required RPO.
 8. Database Recovery
+
 ## 8. Database Recovery
 
 Amazon RDS for PostgreSQL is considered the primary database architecture.
@@ -188,11 +183,8 @@ Primary RDS
              Recovery RDS
 
 The final database recovery mechanism depends on the required RTO, RPO, workload characteristics, and cost considerations.
+```
 
-
-### 9. Application Recovery
-
-```markdown
 ## 9. Application Recovery
 
 Application recovery should be supported through automation rather than manual infrastructure recreation wherever possible.
@@ -219,10 +211,7 @@ Application Validation
 
 Application deployment automation can reduce recovery time and improve consistency between the primary and recovery environments.
 
-
-### 10. Infrastructure Recovery Using Terraform
-
-```markdown
+```
 ## 10. Infrastructure Recovery Using Terraform
 
 Terraform can be used to define the infrastructure required for recovery.
@@ -238,6 +227,7 @@ The approach provides:
 
 The recovery environment should be tested periodically to ensure that the Terraform configuration remains usable for disaster recovery.
 11. DNS and Traffic Recovery
+
 ## 11. DNS and Traffic Recovery
 
 DNS can be used as part of the regional recovery mechanism.
@@ -255,15 +245,13 @@ Conceptually:
               v             v
         Application      Recovery
           Stack            Stack
+```
 
 During a regional recovery event, DNS-based traffic management can redirect users toward the recovery environment where the required infrastructure and application services are available.
 
 The exact mechanism depends on the selected DNS architecture and recovery strategy.
+```
 
-
-### 12. Recovery Scenarios
-
-```markdown
 ## 12. Recovery Scenarios
 
 The DR design considers multiple failure scenarios.
@@ -288,6 +276,7 @@ Replacement Instance
 The objective is to maintain application availability without requiring regional recovery.
 
 Scenario 2 — Availability Zone Failure
+
 AZ-A Failure
      |
      v
@@ -319,10 +308,8 @@ Application Validation
 
 Regional recovery should follow a documented and tested recovery procedure.
 
+```
 
-### 13. Recovery Process
-
-```markdown
 ## 13. Recovery Process
 
 The proposed recovery process is:
@@ -356,10 +343,7 @@ The proposed recovery process is:
 
 Each step should have documented responsibilities, prerequisites, validation criteria, and rollback considerations.
 
-
-### 14. Backup and Recovery Strategy
-
-```markdown
+```
 ## 14. Backup and Recovery Strategy
 
 The backup strategy should consider:
@@ -448,9 +432,7 @@ Document Results
   v
 Improve Recovery Plan
 
-### 17. Failback Strategy
-
-```markdown
+```
 ## 17. Failback Strategy
 
 After the primary environment has been restored, workloads may need to be moved back from the recovery environment.
@@ -476,11 +458,8 @@ Traffic Reconfiguration
 Primary Environment
 
 Failback should only be performed after confirming infrastructure health, data consistency, application readiness, and operational stability.
+```
 
-
-### 18. Disaster Recovery Design Principles
-
-```markdown
 ## 18. Disaster Recovery Design Principles
 
 The architecture follows these principles:
