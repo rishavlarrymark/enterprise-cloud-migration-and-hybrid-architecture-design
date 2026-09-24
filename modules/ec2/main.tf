@@ -1,7 +1,7 @@
 # resource "aws_security_group" "ec2_sg" {
 #     name        = "engine-ec2-sg"
 #     description = "Security group for compute engine"
-    
+
 #     ingress {
 #         description = "Allow HTTP"
 #         from_port   = 80
