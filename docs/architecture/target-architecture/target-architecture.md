@@ -77,6 +77,7 @@ The target architecture is designed to achieve the following objectives:
                     v
                 AWS VPC
 
+```
 
 4. Core Architecture Components
 4.1 AWS VPC
